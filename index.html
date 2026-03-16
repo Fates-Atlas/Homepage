@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Homepage</title>
+    <style>
+        body {
+            /* 1. Custom Image Background */
+            background-image: url('https://picsum.photos'); /* Replace with your image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .widget-container {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        /* 2. Time Widget Styling */
+        #time-widget {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        #date-widget {
+            font-size: 1.5em;
+            margin-top: 5px;
+        }
+        /* 4. Google Search Styling */
+        #search-container {
+            margin-top: 20px;
+        }
+        #search-input {
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: none;
+            width: 300px;
+            max-width: 80%;
+        }
+        #search-button {
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            background-color: #4285F4;
+            color: white;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="widget-container" id="time-date-container">
+        <!-- Time and Date will be inserted here by JavaScript -->
+        <div id="time-widget"></div>
+        <div id="date-widget"></div>
+    </div>
+
+    <!-- 3. Calendar Widget (Basic HTML/JS implementation) -->
+    <div class="widget-container" id="calendar-widget">
+        <h3>Today's Date</h3>
+        <div id="calendar-display"></div>
+    </div>
+
+    <!-- 4. Google Search -->
+    <div id="search-container">
+        <form action="https://www.google.com" method="get" target="_blank">
+            <input type="text" name="q" id="search-input" placeholder="Google search...">
+            <button type="submit" id="search-button">Search</button>
+        </form>
+    </div>
+
+    <script>
+        // JavaScript for Time and Date Widget
+        function updateTimeAndDate() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+            const dateString = now.toLocaleDateString([], { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+
+            document.getElementById('time-widget').textContent = timeString;
+            document.getElementById('date-widget').textContent = dateString;
+        }
+        // Update every second
+        setInterval(updateTimeAndDate, 1000);
+        // Initial call
+        updateTimeAndDate();
+
+        // JavaScript for Basic Calendar Display (today's date only for simplicity)
+        function displayCalendar() {
+            const now = new Date();
+            const calendarDisplay = document.getElementById('calendar-display');
+            calendarDisplay.textContent = now.toLocaleDateString([], { weekday: 'short', month: 'short', day: 'numeric' });
+        }
+        displayCalendar();
+    </script>
+
+</body>
+</html>
