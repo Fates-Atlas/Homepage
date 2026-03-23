@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function applySettings() {
         // Background
         const bgLayer = document.getElementById('background-layer');
-        bgLayer.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), ${settings.bgImage}`;
+        bgLayer.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.075), rgba(0,0,0,0.075)), ${settings.bgImage}`;
         bgLayer.style.filter = `blur(${settings.bgBlur}px)`;
 
         // Only scale if blurred to prevent white edges; otherwise show full image
@@ -947,7 +947,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 ctx.drawImage(img, 0, 0, width, height);
                 
                 // Compress to JPEG at 70% quality
-                const dataUrl = canvas.toDataURL('image/jpeg', 0.7);
+                const dataUrl = canvas.toDataURL('image/jpeg', 0.9);
                 callback(dataUrl);
             };
         };
