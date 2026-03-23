@@ -106,4 +106,8 @@ To display your actual Google Calendar events inside the widget:
 
 > **Pro Tip:** You can do a lot with this feature including embedding a Google Doc/Sheet filled with links for quick access to your important information/websites
 
+## Built With:
+* **Frontend**: HTML5, CSS3 (Custom Properties/Variables), Vanilla JavaScript
+* **APIs**: [OpenWeatherMap](https://openweathermap.org/) (Weather), [TradingView](https://www.tradingview.com/) (Stocks)
+* **Storage**: Browser `localStorage` API
 ---
