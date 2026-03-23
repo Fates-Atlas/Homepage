@@ -3,7 +3,7 @@
 A highly customizable, privacy-focused start page designed to replace the default Safari homepage (though it works great in Chrome and Firefox too). I built this because I wasn't satisfied with the default start page options and wanted a personalized dashboard with widgets, dynamic backgrounds, and essential tools.
 
 <p align="left">
-  <a href="https://fates-atlas.github.io/Safari-Homepage/"><strong>Live Demo</strong></a>
+  <a href="https://fates-atlas.github.io/Homepage/"><strong>Live Demo</strong></a>
 </p>
 
 ![Safari Homepage](Images/webpage.png)
@@ -36,7 +36,7 @@ A highly customizable, privacy-focused start page designed to replace the defaul
 ## Setting as Homepage / New Tab
 
 You can use the hosted version of this dashboard at:
-> **https://fates-atlas.github.io/Safari-Homepage/**
+> **https://fates-atlas.github.io/Homepage/**
 
 ### Safari
 1.  Open Safari and go to **Settings** (or Preferences) > **General**.
@@ -44,7 +44,7 @@ You can use the hosted version of this dashboard at:
 2.  Set **"New windows open with"** to *Homepage*.
 3.  Set **"New tabs open with"** to *Homepage*.
 4.  In the **Homepage** box, paste the link:
-    `https://fates-atlas.github.io/Safari-Homepage/`
+    `https://fates-atlas.github.io/Homepage/`
 
 ### Google Chrome
 1.  Install the [New Tab Redirect](https://chromewebstore.google.com/detail/new-tab-redirect/icpgjfneehieebagbmdbhnlpiopdcmna) extension.
