@@ -2,8 +2,8 @@
 
 A highly customizable, privacy-focused start page designed to replace the default Safari homepage (though it works great in Chrome and Firefox too). I built this because I wasn't satisfied with the default start page options and wanted a personalized dashboard with widgets, dynamic backgrounds, and essential tools.
 
-<p align="center">
-  <a href="https://fates-atlas.github.io/Safari-Homepage/"><strong>▶️ Live Demo</strong></a>
+<p align="left">
+  <a href="https://fates-atlas.github.io/Safari-Homepage/"><strong>Live Demo</strong></a>
 </p>
 
 ![Safari Homepage](Images/webpage.png)
